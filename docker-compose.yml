@@ -1,0 +1,8 @@
+mariadb:
+  image: dylangmiles/docker-mariadb
+  ports:
+    - "3306:3306"
+  volumes:
+    - ./database/mariadb:/data/mariadb
+  privileged: true
+  working_dir: /data
